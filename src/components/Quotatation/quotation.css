@@ -24,3 +24,31 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+
+
+/* Plywood CSS */
+.plywood {
+    margin-top: 9%;
+}
+.plywood .row {
+    margin-bottom: 10%;
+}
+.plywood input {
+    height: 91%;
+}
+.plywood input#pieces {
+    width: 100%;
+    height: 31px;
+    margin-left: 1px;
+}
+.plywood div#plySelector {
+    width: 100%;
+}
+.plywood input#rate {
+    width: 100%;
+   
+}
+.plywood div#submitBtn {
+    display: flex;
+    justify-content: flex-end;
+}

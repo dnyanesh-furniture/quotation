@@ -14,20 +14,20 @@ function MyVerticallyCenteredModal(props) {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header closeButton>
+        {/* <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
           माहिती भरा
           </Modal.Title>
-        </Modal.Header>
+        </Modal.Header> */}
         <Modal.Body>
 
          <InfoModel/>
          
         </Modal.Body>
-        <Modal.Footer>
+        {/* <Modal.Footer>
           <Button variant="danger" onClick={props.onHide} > &#x2715; </Button>
           <Button variant="success" onClick={props.onHide}>&#x2713;</Button>
-        </Modal.Footer>
+        </Modal.Footer> */}
       </Modal>
     );
   }

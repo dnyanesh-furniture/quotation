@@ -35,6 +35,17 @@
 		{ "value" : "steel-leg", "label" :"स्टील पाय", "subType": false},
 		{ "value" : "block", "label" :"चौकट दांडा", "subType": true}
 
+	],
+	"Plywood" :[
+		{ "value" : "18/8", "label" :"18mm - 8x4"},
+		{ "value" : "18/7", "label" :"18mm - 7x4"},
+		{ "value" : "12/8", "label" :"12mm - 8x4"},
+		{ "value" : "12/7", "label" :"12mm - 7x4"},
+		{ "value" : "8/8", "label" :"8mm - 8x4"},
+		{ "value" : "8/7", "label" :"8mm - 7x4"},
+		{ "value" : "6/8", "label" :"6mm - 8x4"},
+		{ "value" : "6/7", "label" :"6mm - 7x4"}
 	]
+
 	
 }

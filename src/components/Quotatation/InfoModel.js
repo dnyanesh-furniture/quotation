@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Form } from 'react-bootstrap';
 import item_options from "./items.json";
 import Select from 'react-select';
 import ICard from './ICard'
