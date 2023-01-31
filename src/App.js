@@ -1,4 +1,4 @@
-import Quotation from "./components/Quotatation/Quotation.js";
+import Quotation from "./components/Quotation/Quotation.js";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./App.css"
 

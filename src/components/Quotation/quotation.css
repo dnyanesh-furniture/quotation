@@ -14,7 +14,7 @@
     position: absolute;
     bottom: 10px;
     right: 38%;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 .addComp button {
     margin-left: 20px;

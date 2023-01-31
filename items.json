@@ -1,0 +1,245 @@
+{
+  "Items": [
+    {
+      "value": "tv-unit",
+      "label": "टीव्ही युनिट"
+    },
+    {
+      "value": "counter",
+      "label": "काउंटर"
+    },
+    {
+      "value": "table",
+      "label": "टेबल"
+    },
+    {
+      "value": "coating-doors",
+      "label": "कोटिंग दरवाजे"
+    },
+    {
+      "value": "kitchen-trolley",
+      "label": "किचन ट्रॉली"
+    },
+    {
+      "value": "dressing-table",
+      "label": "ड्रेसिंग टेबल"
+    },
+    {
+      "value": "showcase",
+      "label": "शोकेसे"
+    },
+    {
+      "value": "bed",
+      "label": "बेड"
+    },
+    {
+      "value": "sofa",
+      "label": "सोफा"
+    },
+    {
+      "value": "teapoy",
+      "label": "टिपवाय"
+    },
+    {
+      "value": "chair",
+      "label": "खुर्ची"
+    },
+    {
+      "value": "stool",
+      "label": "स्टूल"
+    }
+  ],
+  "Elements": [
+    {
+      "value": "plywood",
+      "label": "प्लायवुड",
+      "subType": true
+    },
+    {
+      "value": "ply-bound",
+      "label": "प्लाय बॉउंड",
+      "subType": false
+    },
+    {
+      "value": "sunmica",
+      "label": "सनमायका",
+      "subType": true
+    },
+    {
+      "value": "btc-strip",
+      "label": "बीटीसी पट्टी",
+      "subType": false
+    },
+    {
+      "value": "fevicol",
+      "label": "फेविकॉल व स्प्रे",
+      "subType": false
+    },
+    {
+      "value": "wax",
+      "label": "वॅक्स",
+      "subType": false
+    },
+    {
+      "value": "abro-tape",
+      "label": "एब्रो टेप",
+      "subType": false
+    },
+    {
+      "value": "nails",
+      "label": "खिळे",
+      "subType": true
+    },
+    {
+      "value": "screw",
+      "label": "स्क्रू",
+      "subType": true
+    },
+    {
+      "value": "hindge",
+      "label": "बिजागिरी",
+      "subType": true
+    },
+    {
+      "value": "handle",
+      "label": "हँडेल",
+      "subType": true
+    },
+    {
+      "value": "chain",
+      "label": "साखळ्या ",
+      "subType": false
+    },
+    {
+      "value": "magnet",
+      "label": "मॅग्नेट",
+      "subType": false
+    },
+    {
+      "value": "tower-bolt",
+      "label": "टॉवर बोल्ट ",
+      "subType": false
+    },
+    {
+      "value": "lock",
+      "label": "लॉक",
+      "subType": true
+    },
+    {
+      "value": "slider",
+      "label": "स्लायडर",
+      "subType": true
+    },
+    {
+      "value": "hydrolic-pump",
+      "label": "हायड्रॉलिक पंप",
+      "subType": false
+    },
+    {
+      "value": "trolley-wheel",
+      "label": "ट्रॉली व्हील",
+      "subType": true
+    },
+    {
+      "value": "steel-leg",
+      "label": "स्टील पाय",
+      "subType": false
+    },
+    {
+      "value": "block",
+      "label": "चौकट दांडा",
+      "subType": true
+    }
+  ],
+  "Plywood": [
+    {
+      "value": "18/8",
+      "label": "18mm - 8x4"
+    },
+    {
+      "value": "18/7",
+      "label": "18mm - 7x4"
+    },
+    {
+      "value": "12/8",
+      "label": "12mm - 8x4"
+    },
+    {
+      "value": "12/7",
+      "label": "12mm - 7x4"
+    },
+    {
+      "value": "8/8",
+      "label": "8mm - 8x4"
+    },
+    {
+      "value": "8/7",
+      "label": "8mm - 7x4"
+    },
+    {
+      "value": "6/8",
+      "label": "6mm - 8x4"
+    },
+    {
+      "value": "6/7",
+      "label": "6mm - 7x4"
+    }
+  ],
+  "SelectedItem": [
+    {
+      "SelectedItem": "टीव्ही युनिट",
+      "value": "tv-unit",
+      "id": 1
+    }
+  ],
+  "QuotationList": [
+    {
+      "item": "प्लायवुड",
+      "size": "18mm - 8x4",
+      "total": "1476.00",
+      "id": 1
+    },
+    {
+      "item": "प्लायवुड",
+      "size": "18mm - 7x4",
+      "total": "1464.00",
+      "id": 2
+    },
+    {
+      "item": "प्लायवुड",
+      "size": "18mm - 8x4",
+      "total": "12221.00",
+      "id": 3
+    },
+    {
+      "item": "प्लायवुड",
+      "size": "18mm - 8x4",
+      "total": "121.00",
+      "id": 4
+    },
+    {
+      "item": "प्लायवुड",
+      "size": "18mm - 8x4",
+      "total": "1221.00",
+      "id": 5
+    },
+    {
+      "item": "प्लायवुड",
+      "size": "6mm - 7x4",
+      "total": "13653.00",
+      "id": 6
+    },
+    {
+      "item": "प्लायवुड",
+      "size": "18mm - 8x4",
+      "total": "14762.00",
+      "id": 7
+    },
+    {
+      "item": "प्लायवुड",
+      "size": "18mm - 8x4",
+      "total": "12.00",
+      "id": 8
+    }
+  ]
+}
