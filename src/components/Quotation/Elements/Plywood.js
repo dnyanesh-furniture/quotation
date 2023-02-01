@@ -9,7 +9,7 @@ const Plywood = () => {
     const [plyType , setPlyType] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3001/Plywood", {
+        fetch("https://my-json-server.typicode.com/dnyanesh-furniture/quotation/Plywood", {
               headers: {
                   'Content-Type': 'application/json',
                   'Accept': 'application/json'
@@ -40,7 +40,7 @@ const Plywood = () => {
             "total" : total
         }
 
-        fetch("http://localhost:3001/QuotationList",
+        fetch("https://my-json-server.typicode.com/dnyanesh-furniture/quotation/QuotationList",
          {
             method:"POST",
             headers: {
