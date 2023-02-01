@@ -44,7 +44,7 @@ useEffect(()=>{
     throw new Error(error);
 });
 },[])
-  
+ /*  
 setInterval(() => {
   let val = sessionStorage.getItem("itemFlag");
   console.log(val);
@@ -65,7 +65,7 @@ setInterval(() => {
 
   }
 }, 10000);
-
+ */
 const FurnitureList = () => {
     return <>
     <Select options={itemOptions} onChange={(e)=>getData(e)} id="furnitureList"/>
