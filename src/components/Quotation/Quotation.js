@@ -14,7 +14,7 @@ const Quotation = () => {
   const [itemFlag , setItemFlag] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3001/QuotationList", {
+    fetch("https://my-json-server.typicode.com/dnyanesh-furniture/quotation/QuotationList", {
           headers: {
               'Content-Type': 'application/json',
               'Accept': 'application/json'
@@ -30,7 +30,7 @@ const Quotation = () => {
   },[]);
 
 useEffect(()=>{
-  fetch("http://localhost:3001/Items", {
+  fetch("https://my-json-server.typicode.com/dnyanesh-furniture/quotation/Items", {
     headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
@@ -82,7 +82,7 @@ function getData(e){
     "value" : e.value
   }
   
-  fetch("http://localhost:3001/SelectedItem/1",
+  fetch("https://my-json-server.typicode.com/dnyanesh-furniture/quotation/SelectedItem/1",
   {
      method:"PUT",
      headers: {

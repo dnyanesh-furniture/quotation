@@ -8,7 +8,7 @@ const InfoModel = () => {
 const [elementType , setElementType] = useState("");
 const [elementOptions , setElementOption] = useState([]);
 useEffect(() => {
-  fetch("http://localhost:3001/Elements", {
+  fetch("https://my-json-server.typicode.com/dnyanesh-furniture/quotation/Elements", {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
