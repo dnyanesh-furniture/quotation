@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/quotation/static/css/main.22261776.css",
-    "main.js": "/quotation/static/js/main.d009d053.js",
+    "main.js": "/quotation/static/js/main.f8a48ede.js",
     "index.html": "/quotation/index.html",
     "main.22261776.css.map": "/quotation/static/css/main.22261776.css.map",
-    "main.d009d053.js.map": "/quotation/static/js/main.d009d053.js.map"
+    "main.f8a48ede.js.map": "/quotation/static/js/main.f8a48ede.js.map"
   },
   "entrypoints": [
     "static/css/main.22261776.css",
-    "static/js/main.d009d053.js"
+    "static/js/main.f8a48ede.js"
   ]
 }
