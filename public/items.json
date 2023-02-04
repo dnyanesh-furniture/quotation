@@ -243,8 +243,13 @@
     },
     {
       "item": "प्लायवुड",
+<<<<<<< HEAD:items.json
       "size": "6mm - 8x4",
       "total": "13653.00",
+=======
+      "size": "12mm - 8x4",
+      "total": "1200.00",
+>>>>>>> 2871b6c3651068d44695ee7cc0d7ca58aa78b3b3:public/items.json
       "id": 9
     }
   ]
