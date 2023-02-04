@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState , useContext} from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./quotation.css"
 import QuoteBox from "./QuoteBox";
@@ -8,7 +8,7 @@ import NewComponent from "./NewComponent";
 
 
 
-const Quotation = () => {
+const Quotation = () => {   
   const [itemOptions , setItemOptions] = useState([]);
   const [quoteItems , setQuoteItems] = useState([]);
   const [itemFlag , setItemFlag] = useState(false);
@@ -68,7 +68,8 @@ setInterval(() => {
  */
 const FurnitureList = () => {
     return <>
-    <Select options={itemOptions} onChange={(e)=>getData(e)} id="furnitureList"/>
+    {/* <Select options={itemOptions} onChange={(e)=>getData(e)} id="furnitureList"/> */}
+
     </>
  
 };
@@ -77,26 +78,28 @@ function getData(e){
 
   let item = e.label;
   if( item !== undefined){
-  let selected = {
-    "SelectedItem" : item,
-    "value" : e.value
-  }
+    
+  // let selected = {
+  //   "SelectedItem" : item,
+  //   "value" : e.value
+  // }
   
-  fetch("https://my-json-server.typicode.com/dnyanesh-furniture/quotation/SelectedItem/1",
-  {
-     method:"PUT",
-     headers: {
-         'Content-Type': 'application/json',
-         'Accept': 'application/json'
-     },
-     body:JSON.stringify(selected)
-  })
-  .then((result) => result.json())
-  .then(data => {
-    //setItemFlag(true);
-  }).catch(error => {
-     throw new Error(error);
-  });
+  // fetch("https://my-json-server.typicode.com/dnyanesh-furniture/quotation/SelectedItem/1",
+  // {
+  //    method:"PUT",
+  //    headers: {
+  //        'Content-Type': 'application/json',
+  //        'Accept': 'application/json'
+  //    },
+  //    body:JSON.stringify(selected)
+  // })
+  // .then((result) => result.json())
+  // .then(data => {
+  //   //setItemFlag(true);
+  // }).catch(error => {
+  //    throw new Error(error);
+  // });
+  
   
   }
 
