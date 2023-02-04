@@ -1,4 +1,4 @@
-import React, {useEffect, useState , useContext} from "react";
+import React, {useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./quotation.css"
 import QuoteBox from "./QuoteBox";
@@ -8,10 +8,10 @@ import NewComponent from "./NewComponent";
 
 
 
-const Quotation = () => {   
+const Quotation = () => { 
   const [itemOptions , setItemOptions] = useState([]);
   const [quoteItems , setQuoteItems] = useState([]);
-  const [itemFlag , setItemFlag] = useState(false);
+  //const [itemFlag , setItemFlag] = useState(false);
 
   useEffect(() => {
     fetch("https://my-json-server.typicode.com/dnyanesh-furniture/quotation/QuotationList", {
@@ -68,7 +68,7 @@ setInterval(() => {
  */
 const FurnitureList = () => {
     return <>
-    {/* <Select options={itemOptions} onChange={(e)=>getData(e)} id="furnitureList"/> */}
+    <Select options={itemOptions} onChange={(e)=>getData(e)} id="furnitureList"/>
 
     </>
  
