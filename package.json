@@ -23,7 +23,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "json-server --watch items.json --port 3001",
+    "server": "npx json-server --watch items.json --port = 3001",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
