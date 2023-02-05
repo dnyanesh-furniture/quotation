@@ -1,12 +1,12 @@
 
-import Component1 from "./components/Quotation/Elements/DemoUseContext.js";
+import Quotation from './components/Quotation/Quotation'
 import 'bootstrap/dist/css/bootstrap.css';
 import "./App.css"
 
 function App() {
   return (
   <div>
-   <Component1/>
+   <Quotation/>
   </div>
    
   );

@@ -4,9 +4,9 @@ import Plywood from "./Elements/Plywood";
 
 
 const ICard = (props) =>{
-  switch(props.props.value){
-    case "plywood" : return <Plywood/>;
-    case "ply-bound" : return "Hi";
+  switch(props.props){
+    case 0 : return <Plywood/>;
+    case 1 : return "Hi";
     default : return "";
   }
 }

@@ -1,39 +1,33 @@
-import React, { useState ,useEffect} from 'react';
-//import item_options from "./items.json";
-import Select from 'react-select';
+import React, { useState } from 'react';
+
 import ICard from './ICard'
+import Elements from '../../db.json';
 
 
 const InfoModel = () => {
-const [elementType , setElementType] = useState("");
-const [elementOptions , setElementOption] = useState([]);
-useEffect(() => {
-  fetch("https://my-json-server.typicode.com/dnyanesh-furniture/quotation/Elements", {
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }
-    })
-    .then((result) => result.json())
-    .then(data => {
-      setElementOption(data)
-      
-    }).catch(error => {
-        throw new Error(error);
-    })
-}, []);
+const [elementType , setElementType] = useState(0);
 
+let options = Elements.Elements;
 
 const checkData = (e) =>{
-    setElementType(e);
+  let sel = document.getElementById('element');
+  setElementType(sel.selectedIndex);
 }
 
   return (
     <>
     <div className='container'>
-    <Select options={elementOptions} onChange = {(e)=>checkData(e)}/>
-    <ICard props={elementType}/>
+    <select  id='element' onChange={(e)=>checkData(e)}>
+      {
+        options.map((i , index)=>{
+          return <option key={'ele'+index} >{i.label}</option>
+        }
+        )
+      }
+    </select>
+     <ICard props={elementType}/>
     </div>     
+      
 
       
     </>
