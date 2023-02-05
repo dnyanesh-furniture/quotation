@@ -1,7 +1,7 @@
 {
   "name": "dnyanesh-furniture",
   "version": "0.1.0",
-  "homepage": "https://dnyanesh-furniture.github.io/quotation",
+  "homepage": "https://dnyanesh-furniture.netlify.app",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
