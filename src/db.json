@@ -13,8 +13,8 @@
       "label": "टेबल"
     },
     {
-      "value": "coating-doors",
-      "label": "कोटिंग दरवाजे"
+      "value": "door-skin",
+      "label": "डोअर स्किन"
     },
     {
       "value": "kitchen-trolley",
@@ -25,8 +25,8 @@
       "label": "ड्रेसिंग टेबल"
     },
     {
-      "value": "showcase",
-      "label": "शोकेसे"
+      "value": "wardrobe",
+      "label": "वॉर्डरोब"
     },
     {
       "value": "bed",
@@ -47,6 +47,14 @@
     {
       "value": "stool",
       "label": "स्टूल"
+    },
+    {
+      "value": "basin-table",
+      "label": "बेसिन टेबल"
+    },
+    {
+      "value": "loft",
+      "label": "लॉफ्ट"
     }
   ],
   "Elements": [
@@ -73,11 +81,6 @@
     {
       "value": "fevicol",
       "label": "फेविकॉल व स्प्रे",
-      "subType": false
-    },
-    {
-      "value": "wax",
-      "label": "वॅक्स",
       "subType": false
     },
     {
