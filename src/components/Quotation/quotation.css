@@ -1,3 +1,4 @@
+/*Quotation.js */
 .page-title {
     font-size: 30px;
     font-family: cursive;
@@ -5,8 +6,24 @@
     text-align: center;
     margin-top: 10px;
 }
-
-
+select#furniture {
+    font-size: 20px;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 20%;
+}
+div#furnitureItem {
+    text-align: center;
+    margin-top: 10px;
+}
+span#furnitureItemName {
+    font-size: 25px;
+    margin-right: 20px;
+    color: green;
+}
+.font20{
+    font-size: 20px;
+}
 
 /* new Component CSS */
 
@@ -24,6 +41,31 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+/* QuoteBox */
+
+.quotebox .col-1.cardIcons {
+    padding: 0;
+}
+.quotebox .col-2.cardIcons span.delete{
+    color: darkred;
+}
+.quotebox .col-2.cardIcons {
+    display: flex;
+    padding: 0; 
+}
+.quotebox .col-2.cardIcons span {
+    padding-left: 4px;
+}
+/* Element Modal */
+
+.modal-body select#element {
+    width: 100%;
+    background: burlywood;
+    font-size: 20px;
+}
+.modal-body .select#plywood {
+    width: 100%;
+}
 
 
 /* Plywood CSS */

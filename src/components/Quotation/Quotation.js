@@ -20,15 +20,15 @@ const Quotation = () => {
   var options = data.Items;
     return <>{ itemFlag ?
     <select onChange={(e)=>getData(e)} id='furniture'>
+    <option>फर्निचर निवडा</option>
       {
         options.map((i , index)=>{
           return <option key={index} id={index}>{i.label}</option>
         }
         )
       }
-    </select> : "" 
-    }
-    <div id="furnitureItem" className="ms-4 p-1">
+    </select> : "" }
+    <div id="furnitureItem" >
     <span id="furnitureItemName">{localStorage.getItem('ItemName') || 'फर्निचर'}</span><span id="FEicon" onClick={()=>showOptions()}><EditIcon/></span>
     </div>
     </>
@@ -49,7 +49,7 @@ function showOptions(){
   setItemFlag(true);
   setQuoteItems([])
 }
-console.log(quoteItems,"xc");
+
 return (
   <FurnitureContext.Provider value = {{quoteItems , setQuoteItems}}>
     <div>

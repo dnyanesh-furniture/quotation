@@ -21,10 +21,11 @@ const Plywood = () => {
     function saveData(){
         var itemToadd = {};
         var NewQuote=[] ;
+        let size  = document.getElementById('plywood').value;
        itemToadd = {
-        'item' : "plywood",
+        'item' : "प्लायवुड",
         "total" : total,
-        'size' : 56
+        'size' : size
        }
        NewQuote = [...quoteItems ,itemToadd ];
         setQuoteItems(NewQuote);
@@ -35,7 +36,7 @@ const Plywood = () => {
         <div className='row'>
             <div className='col'>
             
-            <select id='plywood'>
+            <select id='plywood' className='font20'>
                  {
                     options.map((i , index)=>{
                     return <option key={'ply'+index} id={'plyType'+index}>{i.label}</option>
@@ -45,19 +46,19 @@ const Plywood = () => {
 
             </div>
             <div className='col'>
-            <input type="number" placeholder='Rate per piece' id='rate'/>
+            <input type="number" placeholder='Rate per piece' id='rate' className='font20'/>
             </div>
         </div>
         <div className='row'>
             <div className='col'>
-            <input type="number" placeholder='Piece' id='pieces' onChange={(e)=>Calc(e)}/>
+            <input type="number" placeholder='Piece' id='pieces' onChange={(e)=>Calc(e)} className='font20'/>
             </div>
-            <div className='col'>
+            <div className='col font20'>
             <span className='me-2'>&#8377;</span><span id='total' >{total}</span>
             </div>
         </div>
          <div id='submitBtn'>
-         <Button variant="success" className='submit-btn' onClick={()=>saveData()}>&#x2713;</Button>
+         <Button variant="success" className='submit-btn font20' onClick={()=>saveData()}>&#x2713;</Button>
          </div> 
    </div>
 }
