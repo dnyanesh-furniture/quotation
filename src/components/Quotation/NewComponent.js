@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import InfoModel from "./InfoModel";
 
-
+import ModelContext from "./ModelContext";
 
 
 function MyVerticallyCenteredModal(props) {
@@ -42,10 +42,12 @@ return <div className="addComp" id="addComp">
      <Button variant="primary" onClick={() => setModalShow(true)}>
        +
       </Button>
+      <ModelContext.Provider value={{modalShow , setModalShow}} >
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
+      </ModelContext.Provider>
    <Button variant="success">{'>'}</Button>
    
 </div>

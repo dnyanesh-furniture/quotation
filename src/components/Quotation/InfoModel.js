@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import ICard from './ICard'
-import Elements from '../../db.json';
 
+import Elements from '../../db.json';
+import EditElement from './Elements/EditElement';
 
 const InfoModel = () => {
 const [elementType , setElementType] = useState(0);
@@ -25,7 +25,7 @@ const checkData = (e) =>{
         )
       }
     </select>
-     <ICard props={elementType}/>
+     <EditElement props={elementType}/>
     </div>     
       
 

@@ -187,5 +187,25 @@
       "value": "6/7",
       "label": "6mm - 7x4"
     }
+  ],
+  "PlyBound" : [
+    {
+      "value": "25/8",
+      "label": "25mm - 8x4"
+    },
+    {
+      "value": "25/7",
+      "label": "25mm - 7x4"
+    }
+  ],
+  "SunMica" : [
+    {
+      "value": "sunwhite",
+      "label": "व्हाईट"
+    },
+    {
+      "value": "suncolor",
+      "label": "कलर"
+    }
   ]
 }

@@ -11,6 +11,7 @@ select#furniture {
     width: 100%;
     padding-left: 3%;
     padding-right: 20%;
+    margin-top: 10px;
 }
 div#furnitureItem {
     text-align: center;
@@ -20,17 +21,26 @@ span#furnitureItemName {
     font-size: 25px;
     margin-right: 20px;
     color: green;
+    font-weight: bold;
 }
 .font20{
     font-size: 20px;
 }
-
+h1.page-title {
+    position: sticky;
+    top: 0;
+    background: #ffa03cba;
+    z-index: 99;
+    padding: 3%;
+    margin-top: 0;
+    filter: drop-shadow(2px 4px 6px black);
+}
 /* new Component CSS */
 
 .addComp {
-    position: absolute;
+    position: sticky;
     bottom: 10px;
-    right: 38%;
+    margin-left: 30%;
     /* visibility: hidden; */
 }
 .addComp button {
@@ -46,16 +56,35 @@ span#furnitureItemName {
 .quotebox .col-1.cardIcons {
     padding: 0;
 }
-.quotebox .col-2.cardIcons span.delete{
+.quotebox .col-1.cardIcons span.delete{
     color: darkred;
 }
-.quotebox .col-2.cardIcons {
+.quotebox .col-1.cardIcons {
     display: flex;
-    padding: 0; 
+    /* padding: 0;  */
 }
-.quotebox .col-2.cardIcons span {
+.quotebox .col-1.cardIcons span {
     padding-left: 4px;
 }
+.quotebox span.delete svg {
+    height: 28px;
+    width: 28px;
+}
+.quotebox .card:hover {
+    background: wheat;
+}
+.quotebox .card{
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+span.totalCss {
+    color:  #3e25c1;
+}
+span.float-end.rateCss {
+    color: green;
+}
+
+
 /* Element Modal */
 
 .modal-body select#element {
@@ -68,29 +97,35 @@ span#furnitureItemName {
 }
 
 
+
+
+
 /* Plywood CSS */
-.plywood {
+.EditElement {
     margin-top: 9%;
 }
-.plywood .row {
+.EditElement .row {
     margin-bottom: 10%;
 }
-.plywood input {
+.EditElement input {
     height: 91%;
 }
-.plywood input#pieces {
+.EditElement input#pieces {
     width: 100%;
     height: 31px;
     margin-left: 1px;
 }
-.plywood div#plySelector {
+.EditElement div#plySelector {
     width: 100%;
 }
-.plywood input#rate {
+.EditElement input#rate {
     width: 100%;
    
 }
-.plywood div#submitBtn {
+.EditElement div#submitBtn {
     display: flex;
     justify-content: flex-end;
+}
+.EditElement select#elementSelect {
+    width: 100%;
 }

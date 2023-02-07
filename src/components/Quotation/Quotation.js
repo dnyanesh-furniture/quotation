@@ -12,7 +12,7 @@ const Quotation = () => {
   const [itemFlag , setItemFlag] = useState(true);
 
   useEffect(() => {
-    localStorage.setItem("ItemName" , ' फर्निचर');
+    localStorage.setItem("ItemName" , 'फर्निचर');
   }, [])
   
 
