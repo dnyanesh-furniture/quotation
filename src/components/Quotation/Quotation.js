@@ -10,10 +10,20 @@ import FurnitureContext from "./FurnitureContext";
 const Quotation = () => { 
   const [quoteItems , setQuoteItems] = useState([]);
   const [itemFlag , setItemFlag] = useState(true);
-
+  const [GrsTotal , setGrsTotal] = useState(0)
   useEffect(() => {
     localStorage.setItem("ItemName" , 'फर्निचर');
-  }, [])
+  }, []);
+
+  useEffect(() => {
+    let gross = 0;
+    quoteItems.map((z)=>{
+     let n = Number(z.total);
+      gross += n;
+      return 0;
+    });
+    setGrsTotal(gross);
+  }, [quoteItems])
   
 
   const  FurnitureList = () => {
@@ -30,6 +40,7 @@ const Quotation = () => {
     </select> : "" }
     <div id="furnitureItem" >
     <span id="furnitureItemName">{localStorage.getItem('ItemName') || 'फर्निचर'}</span><span id="FEicon" onClick={()=>showOptions()}><EditIcon/></span>
+    <span className="float-end grossTotal">&#8377; {GrsTotal}</span>
     </div>
     </>
  

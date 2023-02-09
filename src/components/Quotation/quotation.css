@@ -14,10 +14,11 @@ select#furniture {
     margin-top: 10px;
 }
 div#furnitureItem {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 10px;
+    margin-left: 20px;
 }
-span#furnitureItemName {
+span#furnitureItemName , span.grossTotal {
     font-size: 25px;
     margin-right: 20px;
     color: green;
@@ -58,6 +59,7 @@ h1.page-title {
 }
 .quotebox .col-1.cardIcons span.delete{
     color: darkred;
+    z-index: 999;
 }
 .quotebox .col-1.cardIcons {
     display: flex;

@@ -55,6 +55,10 @@
     {
       "value": "loft",
       "label": "लॉफ्ट"
+    },
+    {
+      "value": "frame",
+      "label": "चौकट"
     }
   ],
   "Elements": [
@@ -80,7 +84,7 @@
     },
     {
       "value": "fevicol",
-      "label": "फेविकॉल व स्प्रे",
+      "label": "फेविकॉल / स्प्रे",
       "subType": false
     },
     {
@@ -206,6 +210,198 @@
     {
       "value": "suncolor",
       "label": "कलर"
+    }
+  ],
+  "BTC" :[
+    {
+      "value": "ek-pav",
+      "label": "एक पाव"
+    },
+    {
+      "value": "pav-ardha",
+      "label": "पाव अर्धा"
+    }
+  ],
+  "Fevicol" :[
+    {
+      "value": "fevicol",
+      "label": "फेविकॉल"
+    },
+    {
+      "value": "spray",
+      "label": "स्प्रे"
+    }
+  ],
+  "Nails":[
+    {
+      "value": "paun-inch",
+      "label": "पाऊण इंची"
+    },
+    {
+      "value": "one-inch",
+      "label": "एक इंची"
+    },
+    {
+      "value": "onehalf-inch",
+      "label": "दीड इंची"
+    },
+    {
+      "value": "two-inch",
+      "label": "दोन इंची"
+    },
+    {
+      "value": "17-number",
+      "label": "सतरा नंबर"
+    },
+    {
+      "value": "19-number",
+      "label": "एकोणवीस नंबर"
+    },
+    {
+      "value": "vaynel",
+      "label": "वायनेल"
+    }
+  ],
+  "Screws":[
+    {
+      "value": "25x6",
+      "label": "25 x 6"
+    },
+    {
+      "value": "35x6",
+      "label": "35 x 6"
+    },
+    {
+      "value": "32x8",
+      "label": "32 x 8"
+    },
+    {
+      "value": "19x6",
+      "label": "19 x 6"
+    },
+    {
+      "value": "50x8",
+      "label": "50 x 8"
+    },
+    {
+      "value": "75x8",
+      "label": "75 x 8"
+    },
+    {
+      "value": "100x8",
+      "label": "100 x 8"
+    }
+  ],
+  "Hindges":[
+    {
+      "value": "w-3",
+      "label": "W-हिंजेस- 3''"
+    },
+    {
+      "value": "w-4",
+      "label": "W-हिंजेस- 4''"
+    },
+    {
+      "value": "w-6",
+      "label": "W-हिंजेस- 6''"
+    },
+    {
+      "value": "l-3",
+      "label": "L-हिंजेस- 3''"
+    },
+    {
+      "value": "l-4",
+      "label": "L-हिंजेस- 4''"
+    },
+    {
+      "value": "l-6",
+      "label": "L-हिंजेस- 6''"
+    },
+    {
+      "value": "s-3",
+      "label": "साधी-हिंजेस- 3''"
+    },
+    {
+      "value": "s-4",
+      "label": "साधी-हिंजेस- 4''"
+    },
+    {
+      "value": "s-6",
+      "label": "साधी-हिंजेस- 6''"
+    },
+    {
+      "value": "auto-6",
+      "label": "ऑटो-हिंजेस"
+    }
+  ],
+  "Handles":[
+    {
+      "value": "10inch",
+      "label": "10 इंची"
+    },
+    {
+      "value": "8inch",
+      "label": "8 इंची"
+    },
+    {
+      "value": "6inch",
+      "label": "6 इंची"
+    },
+    {
+      "value": "4inch",
+      "label": "4 इंची"
+    }
+  ],
+  "Locks" :[
+    {
+      "value": "lock-cupboard",
+      "label": "कपाट लॉक"
+    },
+    {
+      "value": "lock-drawer",
+      "label": "ड्रॉवर लॉक"
+    }
+  ],
+  "Slider" : [
+    {
+      "value": "s12inch",
+      "label": "12 इंची"
+    },
+    {
+      "value": "s16inch",
+      "label": "16 इंची"
+    },
+    {
+      "value": "s18inch",
+      "label": "18 इंची"
+    },
+    {
+      "value": "s22inch",
+      "label": "22 इंची"
+    }
+  ],
+  "TrolleyWheel" :[
+    {
+      "value": "tw-small",
+      "label": "लहान"
+    },
+    {
+      "value": "tw-large",
+      "label": "मोठे"
+    }
+  ],
+  "Blocks" :[
+    {
+      "value": "5x3",
+      "label": "5 x 3 दांडा"
+    },
+    {
+      "value": "4x3",
+      "label": "4 x 3 दांडा"
+    },
+    {
+      "value": "5x4",
+      "label": "5 x 4 दांडा"
     }
   ]
 }

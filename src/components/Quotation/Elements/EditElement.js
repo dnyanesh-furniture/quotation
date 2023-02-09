@@ -21,13 +21,29 @@ const EditElement = (props) => {
 
 
     switch(props.props){
-        case 0 : options = ElementItems.Plywood; break;
-        case 1 : options = ElementItems.PlyBound ; break;
-        case 2 : options = ElementItems.SunMica ; break;
-        case 3 : options = [] ; break;
+        case 0  : options = ElementItems.Plywood; break;
+        case 1  : options = ElementItems.PlyBound ; break;
+        case 2  : options = ElementItems.SunMica ; break;
+        case 3  : options = ElementItems.BTC ; break;
+        case 4  : options = ElementItems.Fevicol ; break;
+        case 5  : options = [] ; break;
+        case 6  : options = ElementItems.Nails ; break;
+        case 7  : options = ElementItems.Screws ; break;
+        case 8  : options = ElementItems.Hindges ; break;
+        case 9  : options = ElementItems.Handles ; break;
+        case 10 : options = [] ; break;
+        case 11 : options = [] ; break;
+        case 12 : options = [] ; break;
+        case 13 : options = ElementItems.Locks ; break;
+        case 14 : options = ElementItems.Slider ; break;
+        case 15 : options = [] ; break;
+        case 16 : options = ElementItems.TrolleyWheel ; break;
+        case 17 : options = [] ; break;
+        case 18 : options = ElementItems.Blocks ; break;
         default : return "";
       }
 
+    
 
     function Calc(e){
        let rate =  document.getElementById("rate").value;
@@ -71,9 +87,18 @@ const EditElement = (props) => {
        }else{
         toast.error("संपूर्ण माहिती भरा")
        }
-        
-
     }
+
+    setTimeout(() => {
+        if(options.length === 0 ){
+            document.getElementById('elementSelect').disabled = true;
+        }else {
+            document.getElementById('elementSelect').disabled = false;
+        }
+    
+    }, 10);
+    
+
    return <div className='EditElement'>
         <div className='row'>
             <div className='col elesubtype'>
@@ -89,12 +114,12 @@ const EditElement = (props) => {
            
             </div>
             <div className='col'>
-            <input type="number" placeholder='Rate per piece' id='rate' className='font20' onChange={(e)=>Calc(e)}/>
+            <input type="number" placeholder='Rate' id='rate' className='font20' onChange={(e)=>Calc(e)}/>
             </div>
         </div>
         <div className='row'>
             <div className='col'>
-            <input type="number" placeholder='Piece' id='pieces' onChange={(e)=>Calc(e)} className='font20'/>
+            <input type="number" placeholder='Quantity' id='pieces' onChange={(e)=>Calc(e)} className='font20'/>
             </div>
             <div className='col font20'>
             <span className='me-2'>&#8377;</span><span id='total' >{total}</span>

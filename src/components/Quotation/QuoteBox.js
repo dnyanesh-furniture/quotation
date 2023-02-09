@@ -24,7 +24,7 @@ const QuoteBox = (props) => {
     {arr.map((e ,index)=>{ return <div className="card" key={'quote'+index} >
             <div className="card-body font20">
                 <div className="row">
-                    <div>{e.item} <span> - {e.size}</span > <span className='float-end rateCss'>&#8377; {e.total}</span></div>
+                    <div><em>{e.item} <span> - {e.size}</span ></em> <span className='float-end rateCss'>&#8377; {e.total}</span></div>
                     <div className="col-11">
                     <span className="totalCss">&#8377; {e.rate} X {e.pieces}</span>
                     </div>
