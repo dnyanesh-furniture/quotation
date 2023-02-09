@@ -1,5 +1,5 @@
 
-import Quotation from './components/Quotation/Quotation'
+// import Quotation from './components/Quotation/Quotation'
 import Whatsapp from './components/Quotation/WhatsApp';
 import 'bootstrap/dist/css/bootstrap.css';
 import "./App.css"
