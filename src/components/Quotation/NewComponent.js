@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./quotation.css"
 import Button from 'react-bootstrap/Button';
@@ -6,7 +6,9 @@ import Modal from 'react-bootstrap/Modal';
 import InfoModel from "./InfoModel";
 
 import ModelContext from "./ModelContext";
+import { Link } from "react-router-dom";
 
+import FurnitureContext from "./FurnitureContext";
 
 function MyVerticallyCenteredModal(props) {
  
@@ -37,6 +39,11 @@ function MyVerticallyCenteredModal(props) {
 const NewComponent = () =>{
     const [modalShow, setModalShow] = React.useState(false);
 
+    const {quoteItems} = useContext(FurnitureContext);
+
+    function setLocalData (){
+      localStorage.setItem("Quotes" , JSON.stringify(quoteItems))
+    }
 
 return <div className="addComp" id="addComp">
      <Button variant="primary" onClick={() => setModalShow(true)}>
@@ -48,7 +55,7 @@ return <div className="addComp" id="addComp">
         onHide={() => setModalShow(false)}
       />
       </ModelContext.Provider>
-   <Button variant="success">{'>'}</Button>
+   <Link to='/custinfo'><Button variant="success" onClick={()=>setLocalData()}>{'>'}</Button></Link>
    
 </div>
 }

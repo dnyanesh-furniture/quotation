@@ -1,13 +1,24 @@
 
-// import Quotation from './components/Quotation/Quotation'
-import Whatsapp from './components/Quotation/WhatsApp';
+import Quotation from './components/Quotation/Quotation'
 import 'bootstrap/dist/css/bootstrap.css';
 import "./App.css"
+
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import CustomerInfo from './components/Quotation/CustomerInfo';
+
 
 function App() {
   return (
   <div>
-   <Whatsapp/>
+  
+   <Router>
+          <Routes>
+            <Route exact path='/' element={<Quotation/>}></Route>
+            <Route exact path='/custinfo' element={< CustomerInfo />}></Route>
+          </Routes>
+   </Router>
+   
+   
   </div>
    
   );
