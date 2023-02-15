@@ -60,7 +60,7 @@ function showOptions(){
   setItemFlag(true);
   setQuoteItems([])
 }
-console.log(quoteItems,"as");
+
 return (
   <FurnitureContext.Provider value = {{quoteItems , setQuoteItems}}>
     <div>

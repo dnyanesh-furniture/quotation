@@ -42,7 +42,8 @@ const NewComponent = () =>{
     const {quoteItems} = useContext(FurnitureContext);
 
     function setLocalData (){
-      localStorage.setItem("Quotes" , JSON.stringify(quoteItems))
+      localStorage.setItem("Quotes" , JSON.stringify(quoteItems));
+      window.print();
     }
 
 return <div className="addComp" id="addComp">

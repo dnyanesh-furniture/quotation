@@ -131,3 +131,7 @@ span.float-end.rateCss {
 .EditElement select#elementSelect {
     width: 100%;
 }
+
+input.percentage {
+    width: 60px;
+}
