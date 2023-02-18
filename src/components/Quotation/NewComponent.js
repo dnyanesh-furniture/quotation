@@ -43,7 +43,7 @@ const NewComponent = () =>{
 
     function setLocalData (){
       localStorage.setItem("Quotes" , JSON.stringify(quoteItems));
-      window.print();
+      //window.print();
     }
 
 return <div className="addComp" id="addComp">

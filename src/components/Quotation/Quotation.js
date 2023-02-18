@@ -58,8 +58,10 @@ function getData(e){
 }
 function showOptions(){
   setItemFlag(true);
-  setQuoteItems([])
+  setQuoteItems([]);
+  localStorage.clear();
 }
+
 
 return (
   <FurnitureContext.Provider value = {{quoteItems , setQuoteItems}}>

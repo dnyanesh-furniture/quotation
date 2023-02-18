@@ -2,6 +2,7 @@
 .page-title {
     font-size: 30px;
     font-family: cursive;
+    /* font-family: 'Tiro Devanagari Marathi', serif; */
     font-weight: 700;
     text-align: center;
     margin-top: 10px;
@@ -134,4 +135,46 @@ span.float-end.rateCss {
 
 input.percentage {
     width: 60px;
+}
+
+
+/*CustInfo*/
+
+.custInfo .custName {
+    display: flex;
+}
+
+.custInfo input.w-100 {
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+.custInfo select {
+    border: none;
+    background: white;
+    border-bottom: 1px solid lightgrey;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+.addComp.btn{
+    margin-left: 36% !important;
+}
+
+
+.details .DFlogo img {
+    width: 100% !important;
+}
+
+
+/*Details*/
+.details button.btn.btn-success.PdfGenerator {
+    margin-left: 34%;
+    margin-bottom: 5%;
+}
+.details button.wapbtn {
+    background: #007a4900;
+    border: none;
+    color: white;
 }
