@@ -1,45 +1,27 @@
-import React from "react";
+import React from 'react';
+import emailjs from '@emailjs/browser';
 
-import ReactWhatsapp from 'react-whatsapp';
-
-import { useRef } from 'react';
-import jsPDF from 'jspdf';
-import ReportTemplate from './ReportTemplate';
+const WhatsApp = () => {
 
 
-const Whatsapp = () =>{
-    const reportTemplateRef = useRef(null);
+  var templateParams = {
+    name: 'James',
+    notes: 'Check this out!'
+};
 
-	const handleGeneratePdf = () => {
-		const doc = new jsPDF({
-			format: 'a4',
-			unit: 'px',
-		});
+  const sendEmail = (e) => {
+    e.preventDefault();
+   
+    emailjs.send('service_hystxwd', 'template_i5xes79', templateParams, 'ZRDG7FavmHtvJDklh')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
-		// Adding the fonts.
-		//doc.setFont(marathi, 'normal');
-
-		doc.html(reportTemplateRef.current, {
-			async callback(doc) {
-				await doc.save('कोटेशन');
-			},
-		});
-	};
-
-
-    return <>
-    <ReactWhatsapp number="+91-888-846-6722" message="Hello World!!!" />
-    
-    <div>
-			<button className="button" onClick={handleGeneratePdf}>
-				Generate PDF
-			</button>
-			<div ref={reportTemplateRef}>
-				<ReportTemplate />
-			</div>
-		</div>
-
-
-    </>
-}
-export default Whatsapp;
+  return (
+    <button onClick={(e)=>sendEmail(e)}>Send</button>
+  );
+};
+export default WhatsApp;

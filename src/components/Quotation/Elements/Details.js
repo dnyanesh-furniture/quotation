@@ -3,8 +3,9 @@ import ReactToPdf from 'react-to-pdf';
 import DFlogo from  '../Images/DFLogo.jpg'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import DownloadForOfflineOutlinedIcon from '@mui/icons-material/DownloadForOfflineOutlined';
-import AddIcon from '@mui/icons-material/Add';
 import ReactWhatsapp from 'react-whatsapp';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import emailjs from '@emailjs/browser';
 
 const Details = () =>{
    
@@ -24,6 +25,15 @@ const Details = () =>{
         };
     }
     
+   
+    console.log(tickets.length);
+    let items = '';
+    tickets.map((tc , index)=>{
+        let newItm  = (index + 1 ) + '  ' + tc.item + '  ' + tc.size + '  ' + tc.rate + '  ' + tc.pieces + '  ' + tc.total + '...,';
+        items += newItm;
+        return 1;
+    })
+ 
 
     let Cdata = JSON.parse(localStorage.getItem('CustData'));
     let name = Cdata['name'] ;
@@ -34,6 +44,33 @@ const Details = () =>{
     let Gross = localStorage.getItem("Gross");
     let d = new Date();
     let date = d.getDate()+'/'+d.getMonth()+'/'+d.getFullYear();
+
+    
+
+//Email
+    var templateParams = {
+        Itemname : localStorage.getItem('ItemName'),
+        name: name,
+        number : number,
+        quotes: items,
+        date : date,
+        gross : Number(Gross).toFixed(2) 
+        
+    };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+   
+    emailjs.send('service_hystxwd', 'template_i5xes79', templateParams, 'ZRDG7FavmHtvJDklh')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
+
     return <>
     <div className='details' ref={ref}>
             <div className='DFlogo'>
@@ -55,7 +92,7 @@ const Details = () =>{
                 </div>
 
 
-                <div className='tableDisp'>
+                <div className='tableDisp' id="QuoteTable">
                         <div className="container">
                             {tickets.length === 0 ? (
                                 "You currently have no quotes created"
@@ -110,7 +147,7 @@ const Details = () =>{
         </div>
          <ReactToPdf targetRef={ref} filename={filename} options={options} x={0.3} y={0.3} >
                 {({toPdf}) => (
-                     <button  className="btn btn-success PdfGenerator" onClick={toPdf}><ReactWhatsapp number={wapNo} message="नमस्कार 🙏🙏 ,ज्ञानेश फर्निचर कडून कोटेशन " className="wapbtn"><DownloadForOfflineOutlinedIcon/> <AddIcon/> <WhatsAppIcon/></ReactWhatsapp></button>
+                     <button  className="btn btn-success PdfGenerator" onClick={toPdf}><ReactWhatsapp number={wapNo} message="नमस्कार 🙏🙏 ,ज्ञानेश फर्निचर कडून कोटेशन " className="wapbtn" onClick={(e)=>sendEmail(e)}><DownloadForOfflineOutlinedIcon/> <EmailOutlinedIcon/> <WhatsAppIcon/></ReactWhatsapp></button>
                 )}
             </ReactToPdf>
         </>
