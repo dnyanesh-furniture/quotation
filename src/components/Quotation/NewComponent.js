@@ -4,10 +4,10 @@ import "./quotation.css"
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import InfoModel from "./InfoModel";
-
+import SkipNextIcon from '@mui/icons-material/SkipNext';
 import ModelContext from "./ModelContext";
 import { Link } from "react-router-dom";
-
+import AddIcon from '@mui/icons-material/Add';
 import FurnitureContext from "./FurnitureContext";
 
 function MyVerticallyCenteredModal(props) {
@@ -48,7 +48,7 @@ const NewComponent = () =>{
 
 return <div className="addComp" id="addComp">
      <Button variant="primary" onClick={() => setModalShow(true)}>
-       +
+     <AddIcon style={{'fontSize':'29px' , 'marginLeft':'-3px' , 'marginTop':'-3px'}}/>
       </Button>
       <ModelContext.Provider value={{modalShow , setModalShow}} >
       <MyVerticallyCenteredModal
@@ -56,7 +56,7 @@ return <div className="addComp" id="addComp">
         onHide={() => setModalShow(false)}
       />
       </ModelContext.Provider>
-   <Link to='/custinfo'><Button variant="success" onClick={()=>setLocalData()}>{'>'}</Button></Link>
+   <Link to='/custinfo'><Button variant="success" onClick={()=>setLocalData()}><SkipNextIcon style={{'fontSize':'29px', 'marginLeft':'-3px' , 'marginTop':'-3px'}}/></Button></Link>
    
 </div>
 }

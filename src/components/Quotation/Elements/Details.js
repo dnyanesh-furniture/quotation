@@ -6,6 +6,9 @@ import DownloadForOfflineOutlinedIcon from '@mui/icons-material/DownloadForOffli
 import ReactWhatsapp from 'react-whatsapp';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import emailjs from '@emailjs/browser';
+import HomeIcon from '@mui/icons-material/Home';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 
 const Details = () =>{
    
@@ -24,12 +27,10 @@ const Details = () =>{
             format: [tickets.length,5]
         };
     }
-    
-   
-    console.log(tickets.length);
+
     let items = '';
     tickets.map((tc , index)=>{
-        let newItm  = (index + 1 ) + '  ' + tc.item + '  ' + tc.size + '  ' + tc.rate + '  ' + tc.pieces + '  ' + tc.total + '...,';
+        let newItm  = (index + 1 ) +').  ' + tc.item + '  ' + tc.size + '  ' + tc.rate + '  ' + tc.pieces + '  ' + tc.total + '...,';
         items += newItm;
         return 1;
     })
@@ -69,6 +70,9 @@ const Details = () =>{
       });
   };
 
+  function goHome(){
+    localStorage.clear();
+  }
 
 
     return <>
@@ -95,7 +99,7 @@ const Details = () =>{
                 <div className='tableDisp' id="QuoteTable">
                         <div className="container">
                             {tickets.length === 0 ? (
-                                "You currently have no quotes created"
+                                <span className="fw-bold ms-3">कृपया योग्य माहिती भरा.</span>
                             ) : (
                                 <table className="table">
                                 <thead>
@@ -144,6 +148,9 @@ const Details = () =>{
             </div>
            <p className="ms-4"><span>प्रोप्रा . विजय सुतार </span><span className="float-end me-4">+91-9921547327</span></p>
            <p className="text-center">&#169;dnyanesh-furniture-tembhurni</p>
+        </div>
+        <div className='homeBtn'>
+            <Link to='/'> <Button variant='primary' onClick={()=>goHome()}><HomeIcon style={{'fontSize':'30px'}}/></Button></Link>
         </div>
          <ReactToPdf targetRef={ref} filename={filename} options={options} x={0.3} y={0.3} >
                 {({toPdf}) => (

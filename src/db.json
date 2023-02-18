@@ -156,11 +156,6 @@
       "value": "block",
       "label": "चौकट दांडा",
       "subType": true
-    },
-    {
-      "value": "majuri",
-      "label": "मजुरी",
-      "subType": false
     }
   ],
   "Plywood": [

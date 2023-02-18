@@ -3,7 +3,8 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import HomeIcon from '@mui/icons-material/Home';
+import SkipNextIcon from '@mui/icons-material/SkipNext';
 
 const CustomerInfo = () =>{
     const[cms , setCms] = useState(0);
@@ -51,7 +52,9 @@ const CustomerInfo = () =>{
         localStorage.setItem("Gross" ,cms + gross);
         //window.print();
       }
-   
+      function goHome(){
+        localStorage.clear();
+      }
 
 return <div>
     <h1 className="page-title">ज्ञानेश फर्निचर</h1>
@@ -100,7 +103,10 @@ return <div>
     </div>
     </div>
     <div className='addComp btn'>
-    <Link to='/finalquote'><Button variant="success" onClick={()=>setLocalData()}>{'>'}</Button></Link>
+    <Link to='/finalquote'><Button variant="success" onClick={()=>setLocalData()}><SkipNextIcon style={{'fontSize':'29px', 'marginLeft':'-3px' , 'marginTop':'-3px'}}/></Button></Link>
+    </div>
+    <div className='homeBtn'>
+    <Link to='/'> <Button variant='primary' onClick={()=>goHome()}><HomeIcon style={{'fontSize':'30px'}}/></Button></Link>
     </div>
     
     

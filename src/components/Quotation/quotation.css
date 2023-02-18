@@ -179,3 +179,11 @@ button.wapbtn {
     color: white;
     
 }
+
+.homeBtn button.btn.btn-primary {
+    border-radius: 37px;
+    width: 55px;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+}
