@@ -169,12 +169,13 @@ input.percentage {
 
 
 /*Details*/
-.details button.btn.btn-success.PdfGenerator {
+button.btn.btn-success.PdfGenerator {
     margin-left: 34%;
     margin-bottom: 5%;
 }
-.details button.wapbtn {
+button.wapbtn {
     background: #007a4900;
     border: none;
     color: white;
+    
 }
