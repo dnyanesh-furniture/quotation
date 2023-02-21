@@ -62,7 +62,7 @@ const Details = () =>{
   const sendEmail = (e) => {
     e.preventDefault();
    
-    emailjs.send('service_hystxwd', 'template_i5xes79', templateParams, 'ZRDG7FavmHtvJDklh')
+    emailjs.send('service_iig6xyl', 'template_2wxyyg9', templateParams, 'L_yBjQrMZ1mroaYKT')
       .then((result) => {
           console.log(result.text);
       }, (error) => {

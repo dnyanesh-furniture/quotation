@@ -187,3 +187,8 @@ button.wapbtn {
     bottom: 20px;
     right: 25px;
 }
+
+/* Modal Popup*/
+.modal-dialog.modal-lg {
+    margin-top: 29%;
+}
