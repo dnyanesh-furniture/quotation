@@ -66,7 +66,7 @@ return <div>
     <div className="card "  >
             <div className="card-body font20">
                 <div className="row">
-                    <div><em><span>मजुरी</span ></em>
+                    <div><em><span>मजुरी</span></em>
                     
                     <div className="col mt-2">
                     &#8377; {gross} x <input type='number' className='percentage' placeholder='0' onChange={(e)=>setPercentage(e)} id='cmsRate'/> % = &#8377; {cms}
