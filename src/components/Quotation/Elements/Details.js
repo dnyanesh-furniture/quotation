@@ -44,7 +44,7 @@ const Details = () =>{
     let filename = localStorage.getItem('ItemName') + '-' + name + ".pdf";    
     let Gross = localStorage.getItem("Gross");
     let d = new Date();
-    let date = d.getDate()+'/'+d.getMonth()+'/'+d.getFullYear();
+    let date = d.getDate()+'/'+d.getMonth()+1 + '/'+d.getFullYear();
    console.log(date,"date");
 
     
