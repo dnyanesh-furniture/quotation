@@ -45,6 +45,7 @@ const Details = () =>{
     let Gross = localStorage.getItem("Gross");
     let d = new Date();
     let date = d.getDate()+'/'+d.getMonth()+'/'+d.getFullYear();
+   console.log(date,"date");
 
     
 
